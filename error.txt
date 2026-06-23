@@ -1,0 +1,188 @@
+Launching lib/main.dart on iPhone 17 in debug mode...
+Running Xcode build...                                          
+Xcode build done.                                           23.8s
+Failed to build iOS app
+Error output from Xcode build:
+↳
+    ** BUILD FAILED **
+
+
+Xcode's output:
+↳
+    Writing result bundle at path:
+    	/var/folders/ck/ny8xjgwj6_x41y_y_txvgtyw0000gn/T/flutter_tools.MoYFuW/flutter_ios_build_temp_dirmzcAIV/temporary_xcresult_bundle
+
+    lib/features/home/home_screen.dart:416:24: Error: Can't find ')' to match '('.
+                        Row(
+                           ^
+    lib/features/home/home_screen.dart:327:24: Error: Can't find ')' to match '('.
+                  Container(
+                           ^
+    lib/features/home/home_screen.dart:11:50: Error: Can't find '}' to match '{'.
+    class _HomeScreenState extends State<HomeScreen> {
+                                                     ^
+    lib/features/home/home_screen.dart:13:1: Error: Variables must be declared using the keywords 'const', 'final', 'var' or a type name.
+    Try adding the name of the type of the variable or the keyword 'var'.
+    import 'package:flutter/material.dart';
+    ^^^^^^
+    lib/features/home/home_screen.dart:13:1: Error: Expected ';' after this.
+    import 'package:flutter/material.dart';
+    ^^^^^^
+    lib/features/home/home_screen.dart:13:8: Error: Expected a class member, but got ''package:flutter/material.dart''.
+    import 'package:flutter/material.dart';
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    lib/features/home/home_screen.dart:13:39: Error: Expected a class member, but got ';'.
+    import 'package:flutter/material.dart';
+                                          ^
+    lib/features/home/home_screen.dart:14:1: Error: Variables must be declared using the keywords 'const', 'final', 'var' or a type name.
+    Try adding the name of the type of the variable or the keyword 'var'.
+    import '../trips/trip_request_screen.dart';
+    ^^^^^^
+    lib/features/home/home_screen.dart:14:1: Error: Expected ';' after this.
+    import '../trips/trip_request_screen.dart';
+    ^^^^^^
+    lib/features/home/home_screen.dart:14:8: Error: Expected a class member, but got ''../trips/trip_request_screen.dart''.
+    import '../trips/trip_request_screen.dart';
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    lib/features/home/home_screen.dart:14:43: Error: Expected a class member, but got ';'.
+    import '../trips/trip_request_screen.dart';
+                                              ^
+    lib/features/home/home_screen.dart:16:1: Error: Classes can't be declared inside other classes.
+    Try moving the class to the top-level.
+    class HomeScreen extends StatefulWidget {
+    ^^^^^
+    lib/features/home/home_screen.dart:16:18: Error: Expected a class member, but got 'extends'.
+    class HomeScreen extends StatefulWidget {
+                     ^^^^^^^
+    lib/features/home/home_screen.dart:16:26: Error: A method declaration needs an explicit list of parameters.
+    Try adding a parameter list to the method declaration.
+    class HomeScreen extends StatefulWidget {
+                             ^^^^^^^^^^^^^^
+    lib/features/home/home_screen.dart:23:1: Error: Classes can't be declared inside other classes.
+    Try moving the class to the top-level.
+    class _HomeScreenState extends State<HomeScreen> {
+    ^^^^^
+    lib/features/home/home_screen.dart:23:24: Error: Expected a class member, but got 'extends'.
+    class _HomeScreenState extends State<HomeScreen> {
+                           ^^^^^^^
+    lib/features/home/home_screen.dart:23:32: Error: A method declaration needs an explicit list of parameters.
+    Try adding a parameter list to the method declaration.
+    class _HomeScreenState extends State<HomeScreen> {
+                                   ^^^^^
+    lib/features/home/home_screen.dart:14:1: Error: 'import' is already declared in this scope.
+    import '../trips/trip_request_screen.dart';
+    ^^^^^^
+    lib/features/home/home_screen.dart:13:1: Context: Previous declaration of 'import'.
+    import 'package:flutter/material.dart';
+    ^^^^^^
+    lib/features/home/home_screen.dart:11:7: Error: The non-abstract class '_HomeScreenState' is missing implementations for these members:
+     - State.build
+    Try to either
+     - provide an implementation,
+     - inherit an implementation from a superclass or mixin,
+     - mark the class as abstract, or
+     - provide a 'noSuchMethod' implementation.
+    class _HomeScreenState extends State<HomeScreen> {
+          ^^^^^^^^^^^^^^^^
+    /usr/local/share/flutter/packages/flutter/lib/src/widgets/framework.dart:1461:10: Context: 'State.build' is defined here.
+      Widget build(BuildContext context);
+             ^^^^^
+    lib/features/home/home_screen.dart:17:27: Error: Superclass has no getter named 'key'.
+      const HomeScreen({super.key});
+                              ^^^
+    lib/features/home/home_screen.dart:17:19: Error: Too many positional arguments: 0 allowed, but 1 found.
+    Try removing the extra positional arguments.
+      const HomeScreen({super.key});
+                      ^
+    lib/features/home/home_screen.dart:5:9: Context: Found this candidate, but the arguments don't match.
+      const HomeScreen({super.key});
+            ^^^^^^^^^^
+    lib/features/home/home_screen.dart:20:3: Error: 'State' isn't a type.
+      State<HomeScreen> createState() => _HomeScreenState();
+      ^^^^^
+    lib/features/home/home_screen.dart:416:24: Error: Too many positional arguments: 0 allowed, but 2 found.
+    Try removing the extra positional arguments.
+                        Row(
+                           ^
+    /usr/local/share/flutter/packages/flutter/lib/src/widgets/basic.dart:5821:9: Context: Found this candidate, but the arguments don't match.
+      const Row({
+            ^^^
+    lib/features/home/home_screen.dart:702:25: Error: Expected an identifier, but got ']'.
+    Try inserting an identifier before ']'.
+                            ],
+                            ^
+    lib/features/home/home_screen.dart:702:25: Error: Expected ')' before this.
+                            ],
+                            ^
+    lib/features/home/home_screen.dart:634:26: Error: Too many positional arguments: 0 allowed, but 4 found.
+    Try removing the extra positional arguments.
+                          Row(
+                             ^
+    /usr/local/share/flutter/packages/flutter/lib/src/widgets/basic.dart:5821:9: Context: Found this candidate, but the arguments don't match.
+      const Row({
+            ^^^
+    lib/features/home/home_screen.dart:327:24: Error: Too many positional arguments: 0 allowed, but 7 found.
+    Try removing the extra positional arguments.
+                  Container(
+                           ^
+    /usr/local/share/flutter/packages/flutter/lib/src/widgets/container.dart:255:3: Context: Found this candidate, but the arguments don't match.
+      Container({
+      ^^^^^^^^^
+    lib/features/home/home_screen.dart:174:28: Error: Local variable '_statCard' can't be referenced before it is declared.
+                        child: _statCard(
+                               ^^^^^^^^^
+    lib/features/home/home_screen.dart:716:12: Context: This is the declaration of the variable '_statCard'.
+        Widget _statCard(
+               ^^^^^^^^^
+    lib/features/home/home_screen.dart:183:28: Error: Local variable '_statCard' can't be referenced before it is declared.
+                        child: _statCard(
+                               ^^^^^^^^^
+    lib/features/home/home_screen.dart:716:12: Context: This is the declaration of the variable '_statCard'.
+        Widget _statCard(
+               ^^^^^^^^^
+    lib/features/home/home_screen.dart:197:28: Error: Local variable '_statCard' can't be referenced before it is declared.
+                        child: _statCard(
+                               ^^^^^^^^^
+    lib/features/home/home_screen.dart:716:12: Context: This is the declaration of the variable '_statCard'.
+        Widget _statCard(
+               ^^^^^^^^^
+    lib/features/home/home_screen.dart:206:28: Error: Local variable '_statCard' can't be referenced before it is declared.
+                        child: _statCard(
+                               ^^^^^^^^^
+    lib/features/home/home_screen.dart:716:12: Context: This is the declaration of the variable '_statCard'.
+        Widget _statCard(
+               ^^^^^^^^^
+    lib/features/home/home_screen.dart:424:30: Error: Local variable '_statCard' can't be referenced before it is declared.
+                          child: _statCard(
+                                 ^^^^^^^^^
+    lib/features/home/home_screen.dart:716:12: Context: This is the declaration of the variable '_statCard'.
+        Widget _statCard(
+               ^^^^^^^^^
+    lib/features/home/home_screen.dart:174:28: Error: The method '_statCard' isn't defined for the type '_HomeScreenState'.
+     - '_HomeScreenState' is from 'package:wavego_driver/features/home/home_screen.dart' ('lib/features/home/home_screen.dart').
+    Try correcting the name to the name of an existing method, or defining a method named '_statCard'.
+                        child: _statCard(
+                               ^^^^^^^^^
+    lib/features/home/home_screen.dart:183:28: Error: The method '_statCard' isn't defined for the type '_HomeScreenState'.
+     - '_HomeScreenState' is from 'package:wavego_driver/features/home/home_screen.dart' ('lib/features/home/home_screen.dart').
+    Try correcting the name to the name of an existing method, or defining a method named '_statCard'.
+                        child: _statCard(
+                               ^^^^^^^^^
+    lib/features/home/home_screen.dart:197:28: Error: The method '_statCard' isn't defined for the type '_HomeScreenState'.
+     - '_HomeScreenState' is from 'package:wavego_driver/features/home/home_screen.dart' ('lib/features/home/home_screen.dart').
+    Try correcting the name to the name of an existing method, or defining a method named '_statCard'.
+                        child: _statCard(
+                               ^^^^^^^^^
+    lib/features/home/home_screen.dart:206:28: Error: The method '_statCard' isn't defined for the type '_HomeScreenState'.
+     - '_HomeScreenState' is from 'package:wavego_driver/features/home/home_screen.dart' ('lib/features/home/home_screen.dart').
+    Try correcting the name to the name of an existing method, or defining a method named '_statCard'.
+                        child: _statCard(
+                               ^^^^^^^^^
+    Target kernel_snapshot_program failed: Exception
+    Failed to package /Users/gopal/wavego_driver.
+    Command PhaseScriptExecution failed with a nonzero exit code
+    note: Run script build phase 'Run Script' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Runner' from project 'Runner')
+    note: Run script build phase 'Thin Binary' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Runner' from project 'Runner')
+
+Could not build the application for the simulator.
+Error launching application on iPhone 17.
