@@ -64,10 +64,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
                   const SizedBox(width: 12),
 
-                  Column(
-                    crossAxisAlignment:
-                        CrossAxisAlignment.start,
-                    children: const [
+                  const Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
 
                       Text(
                         "Good Morning 👋",
@@ -94,7 +93,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
               const SizedBox(height: 25),
 
-              // ONLINE CARD
+              // ONLINE / OFFLINE CARD
 
               Container(
                 padding: const EdgeInsets.all(18),
@@ -103,9 +102,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: isOnline
                       ? Colors.green.withOpacity(0.15)
                       : const Color(0xFF1E1E1E),
-
-                  borderRadius:
-                      BorderRadius.circular(18),
+                  borderRadius: BorderRadius.circular(18),
                 ),
 
                 child: Row(
@@ -129,7 +126,6 @@ class _HomeScreenState extends State<HomeScreen> {
                             color: isOnline
                                 ? Colors.green
                                 : Colors.white,
-
                             fontSize: 20,
                             fontWeight:
                                 FontWeight.bold,
@@ -211,6 +207,75 @@ class _HomeScreenState extends State<HomeScreen> {
 
               const SizedBox(height: 25),
 
+              // MAP SECTION
+
+              Container(
+                height: 220,
+                width: double.infinity,
+
+                decoration: BoxDecoration(
+                  color: const Color(0xFF1E1E1E),
+                  borderRadius:
+                      BorderRadius.circular(20),
+                ),
+
+                child: Stack(
+                  children: [
+
+                    const Center(
+                      child: Icon(
+                        Icons.map,
+                        size: 100,
+                        color: Colors.white24,
+                      ),
+                    ),
+
+                    Positioned(
+                      top: 16,
+                      left: 16,
+
+                      child: Container(
+                        padding:
+                            const EdgeInsets.symmetric(
+                          horizontal: 12,
+                          vertical: 8,
+                        ),
+
+                        decoration: BoxDecoration(
+                          color: Colors.green,
+                          borderRadius:
+                              BorderRadius.circular(
+                            20,
+                          ),
+                        ),
+
+                        child: const Text(
+                          "Current Location",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight:
+                                FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+
+                    const Positioned(
+                      bottom: 16,
+                      right: 16,
+
+                      child: Icon(
+                        Icons.my_location,
+                        color: Colors.green,
+                        size: 35,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+              const SizedBox(height: 20),
+
               // WAITING CARD
 
               Container(
@@ -223,8 +288,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       BorderRadius.circular(18),
                 ),
 
-                child: Column(
-                  children: const [
+                child: const Column(
+                  children: [
 
                     Icon(
                       Icons.local_taxi,
@@ -256,6 +321,150 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
               ),
+
+              const SizedBox(height: 20),
+
+              // RIDE REQUEST CARD
+
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.all(20),
+
+                decoration: BoxDecoration(
+                  color: const Color(0xFF1E1E1E),
+                  borderRadius:
+                      BorderRadius.circular(18),
+                ),
+
+                child: Column(
+                  crossAxisAlignment:
+                      CrossAxisAlignment.start,
+
+                  children: [
+
+                    const Text(
+                      "New Ride Request",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                        fontWeight:
+                            FontWeight.bold,
+                      ),
+                    ),
+
+                    const SizedBox(height: 15),
+
+                    const Row(
+                      children: [
+                        Icon(
+                          Icons.location_on,
+                          color: Colors.green,
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Text(
+                            "Airport Terminal 2",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+
+                    const SizedBox(height: 12),
+
+                    const Row(
+                      children: [
+                        Icon(
+                          Icons.flag,
+                          color: Colors.red,
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Text(
+                            "Railway Station",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+
+                    const SizedBox(height: 18),
+
+                    const Row(
+                      mainAxisAlignment:
+                          MainAxisAlignment.spaceBetween,
+                      children: [
+
+                        Text(
+                          "Fare",
+                          style: TextStyle(
+                            color: Colors.white54,
+                          ),
+                        ),
+
+                        Text(
+                          "₹420",
+                          style: TextStyle(
+                            color: Colors.green,
+                            fontSize: 24,
+                            fontWeight:
+                                FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+
+                    const SizedBox(height: 20),
+
+                    Row(
+                      children: [
+
+                        Expanded(
+                          child: ElevatedButton(
+                            style:
+                                ElevatedButton.styleFrom(
+                              backgroundColor:
+                                  Colors.red,
+                            ),
+                            onPressed: () {},
+                            child: const Text(
+                              "Reject",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ),
+
+                        const SizedBox(width: 12),
+
+                        Expanded(
+                          child: ElevatedButton(
+                            style:
+                                ElevatedButton.styleFrom(
+                              backgroundColor:
+                                  Colors.green,
+                            ),
+                            onPressed: () {},
+                            child: const Text(
+                              "Accept",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+
+              const SizedBox(height: 40),
             ],
           ),
         ),
